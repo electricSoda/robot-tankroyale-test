@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="robocode-tankroyale-bot-api-0.24.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sample-bots-java-0.24.0/lib/robocode-tankroyale-bot-api-0.24.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

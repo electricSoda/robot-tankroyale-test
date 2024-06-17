@@ -1,0 +1,16 @@
+{
+  "name": "AvoidWallBot",
+  "version": "1.0",
+  "authors": [
+    "Justin Ge"
+  ],
+  "description": "This is a template bot you can use! It moves randomly and avoids walls :D",
+  "homepage": "",
+  "countryCodes": [
+    "us",
+    "mx",
+    "ca"
+  ],
+  "platform": "JVM",
+  "programmingLang": "Java 11"
+}
