@@ -1,6 +1,7 @@
 import dev.robocode.tankroyale.botapi.*;
 import dev.robocode.tankroyale.botapi.events.*;
 import java.util.*;
+import java.net.URI;
 
 // ------------------------------------------------------------------
 // AvoidWall
@@ -12,12 +13,19 @@ public class AvoidWall extends Bot {
 
     // The main method starts our bot
     public static void main(String[] args) {
-        new AvoidWall().start();
+        URI uri;
+        try {
+            uri = new URI("ws://192.168.1.31:3000");
+        } catch (Exception e) {
+            e.printStackTrace();
+            uri = null;
+        }
+        new AvoidWall(uri).start();
     }
 
     // Constructor, which loads the bot config file
-    AvoidWall() {
-        super(BotInfo.fromFile("AvoidWall.json"));
+    AvoidWall(URI uri) {
+        super(BotInfo.fromFile("AvoidWall.json"), uri, "Xo0vViwZ9oBeokHKBOFU4g");
     }
 
     /**
